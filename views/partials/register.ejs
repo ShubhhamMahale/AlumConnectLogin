@@ -1,0 +1,35 @@
+<div class="sign-up" id="sign-up-info" style="
+    width: 465px;
+    padding-right: 50px;
+">
+  <h1>Create Account</h1>
+  <div class="social-media-buttons">
+    <div class="icon">
+      <a class="btn btn-block btn-social btn-facebook" href="/auth/google" role="button">
+            <i class="fab fa-facebook"></i>
+          </a>
+    </div>
+    <div class="icon" >
+      <a class="btn btn-block btn-social btn-google" href="/auth/google" role="button">
+            <i class="fab fa-google"></i>
+          </a>
+    </div>
+    <div class="icon">
+      <a class="btn btn-block btn-social btn-linkedin" href="/auth/google" role="button">
+            <i class="fab fa-linkedin"></i>
+          </a>
+    </div>
+  </div>
+  <p class="small">or use your email for registration:</p>
+  <form id="sign-up-form" action="/main" method="POST" name="signup">
+    <!-- <input type="text" placeholder="Name"/> -->
+    <div class="form-group">
+      <input type="email" class="form-control" name="username" placeholder="Email">
+    </div>
+    <div class="form-group">
+      <input type="password" class="form-control" name="password" placeholder="Password">
+    </div>
+    <button type="submit" class="control-button up" onclick="signup()">Sign Up</button>
+  
+  </form>
+</div>

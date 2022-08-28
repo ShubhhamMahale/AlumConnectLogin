@@ -1,0 +1,40 @@
+<div class="sign-in" id="sign-in-info" style="
+    width: 465px;
+    padding-right: 50px;
+">
+  <h1>Sign In</h1>
+  <div class="social-media-buttons">
+    <div class="social-media-buttons">
+      <div class="icon">
+        <a class="btn btn-block btn-social btn-facebook" href="/auth/google" role="button">
+              <i class="fab fa-facebook"></i>
+            </a>
+      </div>
+      <div class="icon" >
+        <a class="btn btn-block btn-social btn-google" href="/auth/google" role="button">
+              <i class="fab fa-google"></i>
+            </a>
+      </div>
+      <div class="icon">
+        <a class="btn btn-block btn-social btn-linkedin" href="/auth/google" role="button">
+              <i class="fab fa-linkedin"></i>
+            </a>
+      </div>
+    </div>
+  </div>
+  <p class="small">or use your email account:</p>
+  <form id="sign-in-form" action="/main" method="POST" name="signin">
+    <div class="form-group">
+      <input type="email" class="form-control" name="username" placeholder="Email">
+    </div>
+    <div class="form-group">
+      <input type="password" class="form-control" name="password" placeholder="Password">
+    </div>
+    <button class="control-button in" onclick="signin()">Sign In</button>
+    <script type="text/javascript">
+      function signin() {
+      console.log(form.name);
+    };
+    </script>
+  </form>
+</div>
