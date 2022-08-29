@@ -149,7 +149,7 @@ app.get("/logout", function(req, res) {
 });
 
 
-app.post("/main", function(req, res) {
+app.post("/main/register", function(req, res) {
 
   User.register({
     username: req.body.username
@@ -166,7 +166,7 @@ app.post("/main", function(req, res) {
 });
 
 
-app.post("/main", function(req, res) {
+app.post("/main/login", function(req, res) {
 
 
   const user = new User({
